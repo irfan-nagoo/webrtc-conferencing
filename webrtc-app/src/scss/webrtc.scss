@@ -1,0 +1,135 @@
+@import "bootstrap/scss/bootstrap";
+
+body {
+  background: rgb(38, 35, 51);
+  color: white;
+}
+
+header {
+  background-color:rgb(51, 44, 75);
+}
+
+#headerImg {
+  width: 40px; 
+  height: 32px;
+  background-color: rgb(51, 44, 75);
+}
+
+#headerText {
+  padding-left: 10px;
+}
+
+.btn-circle {
+  width: 50px;
+  height: 50px;
+  padding: 13px 18px;
+  border-radius: 50px;
+  font-size: 10px;
+  text-align: center;
+}
+
+video {
+  position: relative;
+  border: 3px solid rgb(229, 229, 231);
+  margin: 5px;
+  left: 10px;
+  top: 0px;
+  opacity: 1;
+}
+
+#localVideoDiv {
+  position: relative;
+}
+
+#remoteVideoDiv {
+  position: relative;
+}
+
+.overlay {
+  text-align: center;
+  width: 220px;
+  color: white;
+  z-index: 1;
+  position: absolute;
+  top: 195px;
+  left: 16px;
+  background-color: rgb(38, 35, 51);
+  opacity: 0.7;
+}
+
+#modalHeader {
+  background: rgb(51, 44, 75);
+}
+
+#modalBody {
+  background: rgb(38, 35, 51);
+}
+
+#modalFooter {
+  background: rgb(51, 44, 75);
+}
+
+.modal.fade.show {
+  backdrop-filter: blur(5px);
+}
+
+
+#chatHeader {
+  background: rgb(51, 44, 75);
+}
+
+
+#chatImage {
+  width: 40px;
+  height: 100%;
+  padding-right: 15px;
+}
+
+#textChatDisplay {
+  height: 400px; 
+  position: relative; 
+  overflow-y: auto;
+}
+
+#sendTextImg {
+  width: 15px; 
+  height: 25px;
+}
+
+#sendChatText {
+  max-width: 200px; 
+  background: rgb(51, 44, 75);
+}
+
+#recieveChatText {
+  max-width: 200px;
+}
+
+#sendChatUser {
+  color: orange; 
+  font-size: x-small;
+}
+
+#recieveChatUser {
+  color: yellow; 
+  font-size: x-small;
+}
+
+#chatImage {
+  width: 45px; 
+  height: 100%
+}
+
+#sendChatTime {
+  padding-right: 15px;
+}
+
+#recieveChatTime {
+  padding-left: 15px;
+}
+
+
+footer {
+  background-color: rgb(51, 44, 75);
+  box-shadow: 0 50vh 0 50vh rgb(51, 44, 75);
+}

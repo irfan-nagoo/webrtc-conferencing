@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Real Time Communication with WebRTC</title>
+    <script src="https://webrtc.github.io/adapter/adapter-latest.js"></script>
+</head>
+
+<body>
+    <header class="p-3 text-white border-bottom">
+        <div class="d-flex text-white flex-wrap align-items-start justify-content-start justify-content-lg-start">
+            <img src="../assets/images/video.png" alt="Video" id="headerImg">
+            <div id="headerText">
+                <h4>Realtime Communication</h4>
+            </div>
+        </div>
+    </header>
+
+    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true" data-bs-backdrop="static">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header" id="modalHeader">
+                    <h5 class="modal-title">Join Conference</h5>
+                </div>
+                <form class="g-2" onsubmit="return false">
+                    <div class="modal-body" id="modalBody">
+                        <div class="input-group flex-nowrap mb-3">
+                            <span class="input-group-text col-md-4">Enter Your Name</span>
+                            <input type="text" class="form-control" id="user" placeholder="Name.." required>
+                        </div>
+                        <div class="input-group flex-nowrap mb-3">
+                            <span class="input-group-text col-md-4">Enter Room Name</span>
+                            <input type="text" class="form-control" id="room" placeholder="Room.." required>
+                        </div>
+                    </div>
+                    <div class="modal-footer" id="modalFooter">
+                        <button id="joinButton" type="submit" class="btn btn-light" data-dismiss="modal">Join</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="mt-2 col-md-12 row text-start">
+
+        <div id="videos" class="d-flex flex-row flex-wrap col-md-8">
+            <div id="localVideoDiv" class="p-2">
+                <video id="localVideo" autoplay playinline muted></video>
+            </div>
+        </div>
+
+        <div class="col-md-4 align-items-end">
+            <section>
+                <div class="card">
+                    <div class="card-header d-flex  text-white align-items-center p-3" id="chatHeader">
+                        <h5 class="mb-0">Chat</h5>
+                    </div>
+                    <div id="textChatDisplay" class="card-body" data-mdb-perfect-scrollbar="true">
+                    </div>
+                    <div class="card-footer text-muted d-flex justify-content-start align-items-center p-3"
+                        id="chatFooter">
+                        <img src="../assets/images/avatar.jpg" alt="avatar 3" id="chatImage">
+                        <textarea rows="1" cols="10" class="form-control form-control-md" id="textInput"
+                            placeholder="Type message"></textarea>
+                        <a class="ms-0" href="#!">
+                            <span class="input-group-text" id="sendText">
+                                <img src="./assets/icons/send.svg" id="sendTextImg"/>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+
+    </div>
+    <div class="container text-center">
+        <div class="row justify-content-md-center">
+            <div>
+                <button id="micOnOff" class="btn btn-circle btn-light"> <img src="./assets/icons/mic.svg" /></button>
+                <button id="videoOnOff" class="btn btn-circle btn-light"> <img
+                        src="./assets/icons/camera-video.svg" /></button>
+                <button id="hangup" class="btn btn-circle btn-light"> <img
+                        src="./assets/icons/telephone-x.svg" /></button>
+            </div>
+        </div>
+    </div>
+
+    <footer class="d-flex text-white flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+        <div id="footerDiv" class="col-md-4 d-flex align-items-center">
+            &copy; 2023 WebRTC, Inc
+        </div>
+    </footer>
+</body>
+
+</html>
