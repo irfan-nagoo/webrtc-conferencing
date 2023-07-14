@@ -9,7 +9,7 @@ var peerConnections = [];
 var local_socket_id;
 var localStream;
 var sendDataChannel = [];
-
+var receiveChannel;
 var displayStream;
 var displaySenders = [];
 var screen_track_id;
@@ -368,7 +368,7 @@ function filesSelected(event) {
   dataChannelSend.value = files;
 }
 
-function sendData() {
+async function sendData() {
   var data = {
     type: 'text',
     content: dataChannelSend.value,
@@ -389,7 +389,8 @@ function sendData() {
     });
   } else {
     // file transfer
-    transferFiles(inputFile.files);
+    await transferFiles(inputFile.files);
+    inputFile.value = "";
   }
   addChatLine(data, 'send');
   dataChannelSend.value = '';
@@ -398,9 +399,9 @@ function sendData() {
 
 async function transferFiles(files) {
   const MAX_DATA_CHUNK_SIZE = 65535;
-  for (const file of inputFile.files) {
+  for (const file of files) {
     var arrayBuffer = await file.arrayBuffer();
-    var numberOfChunks = arrayBuffer.byteLength / MAX_DATA_CHUNK_SIZE;
+    var numberOfChunks = arrayBuffer.byteLength / MAX_DATA_CHUNK_SIZE | 0;
     var data = {
       type: 'file',
       name: file.name,
@@ -435,7 +436,7 @@ async function transferFiles(files) {
 function receiveChannelCallback(event) {
   console.log('Receive Channel Callback');
   isInitiator = true;
-  var receiveChannel = event.channel;
+  receiveChannel = event.channel;
   receiveChannel.onmessage = handelOnMessage();
 }
 
