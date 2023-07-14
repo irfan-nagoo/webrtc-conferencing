@@ -33,17 +33,17 @@ io.on('connection', function (socket) {
     function log() {
         var array = ['Message from Server:'];
         array.push.apply(array, arguments);
-        console.log("Message from Client: ", arguments[1]);
+        console.log(new Date(), ": Message from Client: ", arguments[1]);
         socket.emit('log', array);
     }
 
     socket.on('message', function (message, metaData) {
         log('Client [' + socket.id + '] said: ', message);
-        io.to(metaData.room).emit('message', message, { 
-            from_user: metaData.from_user, 
-            from_socket_id: socket.id, 
+        io.to(metaData.room).emit('message', message, {
+            from_user: metaData.from_user,
+            from_socket_id: socket.id,
             to_socket_id: metaData.to_socket_id
-         });
+        });
     });
 
     socket.on('create or join', function (room) {
@@ -81,10 +81,10 @@ io.on('connection', function (socket) {
         }
     });
 
-    socket.on('bye', function () {
-        console.log('recieved bye');
+    socket.on('disconnect', function () {
+        console.log('recieved disconnect');
+        socket.broadcast.emit('close', socket.id);
     });
-
 
 });
 

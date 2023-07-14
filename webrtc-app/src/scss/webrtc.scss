@@ -6,11 +6,11 @@ body {
 }
 
 header {
-  background-color:rgb(51, 44, 75);
+  background-color: rgb(51, 44, 75);
 }
 
 #headerImg {
-  width: 40px; 
+  width: 40px;
   height: 32px;
   background-color: rgb(51, 44, 75);
 }
@@ -22,19 +22,67 @@ header {
 .btn-circle {
   width: 50px;
   height: 50px;
-  padding: 13px 18px;
+  margin: 10px;
+  outline: none;
+  padding: 10px;
   border-radius: 50px;
-  font-size: 10px;
-  text-align: center;
 }
 
-video {
+#micOnOffImg {
+  width: 30px;
+  height: 30px;
+}
+
+#videoOnOffImg {
+  width: 30px;
+  height: 30px;
+}
+
+#screenShareImg  {
+  width: 30px;
+  height: 30px;
+}
+
+#hangupImg {
+  width: 30px;
+  height: 30px;
+}
+
+#localVideo {
   position: relative;
   border: 3px solid rgb(229, 229, 231);
+  width: 200px;
+  height: 200px;
   margin: 5px;
   left: 10px;
   top: 0px;
   opacity: 1;
+}
+
+#remoteVideo {
+  position: relative;
+  border: 3px solid rgb(229, 229, 231);
+  width: 200px;
+  height: 200px;
+  margin: 5px;
+  left: 10px;
+  top: 0px;
+  opacity: 1;
+}
+
+#screenVideo {
+  position: relative;
+  border: 3px solid rgb(229, 229, 231);
+  width: 100%;
+  height: 525px;
+  margin: 5px;
+  left: 10px;
+  top: 0px;
+  opacity: 1;
+}
+
+#screenVideoDiv {
+  position: relative;
 }
 
 #localVideoDiv {
@@ -45,16 +93,55 @@ video {
   position: relative;
 }
 
-.overlay {
-  text-align: center;
-  width: 220px;
+.overlay-text {
+  text-align: justify;
+  padding-left: 10px;
+  width: 115px;
   color: white;
   z-index: 1;
   position: absolute;
-  top: 195px;
+  top: 190px;
   left: 16px;
+  margin-left: 100px;
   background-color: rgb(38, 35, 51);
-  opacity: 0.7;
+  opacity: 0.8;
+}
+
+.overlay-mic {
+  width: 30px;
+  height: 35px;
+  z-index: 1;
+  position: absolute;
+  top: 180px;
+  left: 21px;
+  background-color: rgb(38, 35, 51);
+  opacity: 0.8;
+}
+
+.overlay-text-screen {
+  text-align: justify;
+  padding-left: 10px;
+  width: 170px;
+  color: white;
+  z-index: 1;
+  position: absolute;
+  top: 510px;
+  right: -16px;
+  background-color: rgb(38, 35, 51);
+  opacity: 0.8;
+}
+
+
+.mic-on-svg {
+  filter: invert(100%) sepia(0%) saturate(7484%) hue-rotate(8deg) brightness(102%) contrast(99%);
+  width: 30px;
+  height: 30px;
+}
+
+.mic-off-svg {
+  filter: invert(18%) sepia(84%) saturate(7228%) hue-rotate(358deg) brightness(103%) contrast(114%);
+  width: 30px;
+  height: 30px;
 }
 
 #modalHeader {
@@ -86,18 +173,13 @@ video {
 }
 
 #textChatDisplay {
-  height: 400px; 
-  position: relative; 
+  height: 400px;
+  position: relative;
   overflow-y: auto;
 }
 
-#sendTextImg {
-  width: 15px; 
-  height: 25px;
-}
-
 #sendChatText {
-  max-width: 200px; 
+  max-width: 200px;
   background: rgb(51, 44, 75);
 }
 
@@ -106,17 +188,17 @@ video {
 }
 
 #sendChatUser {
-  color: orange; 
+  color: orange;
   font-size: x-small;
 }
 
 #recieveChatUser {
-  color: yellow; 
+  color: yellow;
   font-size: x-small;
 }
 
 #chatImage {
-  width: 45px; 
+  width: 45px;
   height: 100%
 }
 
@@ -128,6 +210,19 @@ video {
   padding-left: 15px;
 }
 
+#sendTextImg {
+  width: 20px;
+  height: 25px;
+}
+
+#fileUploadImg {
+  width: 20px;
+  height: 25px;
+}
+
+#fileInput {
+  display: none;
+}
 
 footer {
   background-color: rgb(51, 44, 75);

@@ -43,8 +43,10 @@
     </div>
 
     <div class="mt-2 col-md-12 row text-start">
-
         <div id="videos" class="d-flex flex-row flex-wrap col-md-8">
+            <div id="screenVideoDiv" class="col-md-12" hidden>
+                <video id="screenVideo" autoplay playinline muted></video>
+            </div>
             <div id="localVideoDiv" class="p-2">
                 <video id="localVideo" autoplay playinline muted></video>
             </div>
@@ -64,8 +66,14 @@
                         <textarea rows="1" cols="10" class="form-control form-control-md" id="textInput"
                             placeholder="Type message"></textarea>
                         <a class="ms-0" href="#!">
+                                <span class="input-group-text" id="fileUpload">
+                                    <label for="fileInput"><img src="./assets/icons/paperclip.svg" id="fileUploadImg" /></label>
+                                    <input type="file" id="fileInput" multiple />
+                                </span>
+                        </a>
+                        <a class="ms-0" href="#!">
                             <span class="input-group-text" id="sendText">
-                                <img src="./assets/icons/send.svg" id="sendTextImg"/>
+                                <img src="./assets/icons/send.svg" id="sendTextImg" />
                             </span>
                         </a>
                     </div>
@@ -78,11 +86,14 @@
     <div class="container text-center">
         <div class="row justify-content-md-center">
             <div>
-                <button id="micOnOff" class="btn btn-circle btn-light"> <img src="./assets/icons/mic.svg" /></button>
-                <button id="videoOnOff" class="btn btn-circle btn-light"> <img
-                        src="./assets/icons/camera-video.svg" /></button>
-                <button id="hangup" class="btn btn-circle btn-light"> <img
-                        src="./assets/icons/telephone-x.svg" /></button>
+                <button id="micOnOff" class="btn btn-circle btn-light">
+                    <img src="./assets/icons/mic.svg" id="micOnOffImg" /></button>
+                <button id="videoOnOff" class="btn btn-circle btn-light">
+                    <img src="./assets/icons/camera-video.svg" id="videoOnOffImg" /></button>
+                <button id="screenShare" class="btn btn-circle btn-light">
+                    <img src="./assets/icons/display.svg" id="screenShareImg" /></button>
+                <button id="hangup" class="btn btn-circle btn-light">
+                    <img src="./assets/icons/telephone-x.svg" id="hangupImg" /></button>
             </div>
         </div>
     </div>
