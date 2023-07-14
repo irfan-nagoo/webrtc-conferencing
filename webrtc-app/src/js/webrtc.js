@@ -9,7 +9,6 @@ var peerConnections = [];
 var local_socket_id;
 var localStream;
 var sendDataChannel = [];
-var receiveChannel;
 var displayStream;
 var displaySenders = [];
 var screen_track_id;
@@ -436,7 +435,7 @@ async function transferFiles(files) {
 function receiveChannelCallback(event) {
   console.log('Receive Channel Callback');
   isInitiator = true;
-  receiveChannel = event.channel;
+  var receiveChannel = event.channel;
   receiveChannel.onmessage = handelOnMessage();
 }
 
