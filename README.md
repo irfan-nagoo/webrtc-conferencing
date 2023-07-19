@@ -11,9 +11,9 @@ This project started with some hands on using [Google WebRTC samples](https://co
     4. File transfers (supports large file transfer, tested with whopping 1GB media file).
     5. Screen share (All major uses cases covered)
 
-**Devices Supported:**: Windows desktop, Android devices, ioS devices (iPhone) etc. This application works smoothly with latest Chrome and Edge browser, and should work with other major browsers also.
+**Devices Supported:** Windows desktop, Android devices, ioS devices (iPhone) etc. This application works smoothly with latest Chrome and Edge browser, and should work with other major browsers also.
 
-This application uses core WebRTC APIs referencing [Mozilla documentation](https://developer.mozilla.org/en-US/docs/Web/API/RTCPeerConnection) without using any wrapper frameworks (like simplepeer, peerjs etc.). All forms of transport communication in this application are secure: secure Video/Audio/Display streams, secure text, secure file transfer, secure signaling etc. Also, what is expected behaviour is that the QOS parameters go down when the number of participants in the same session go up.
+This application uses core WebRTC APIs referencing [Mozilla documentation](https://developer.mozilla.org/en-US/docs/Web/API/RTCPeerConnection) without using any wrapper frameworks (like simplepeer, peerjs etc.). All forms of transport communication in this application are secure: secure Video/Audio/Display streams, secure text, secure file transfer, secure signaling etc. Just a heads up, the QOS parameters can go down when the number of participants in the same session go up.
 
 I recommend reading the READ.ME section of webrtc-app/webrtc-server to understanding the working of this application. This application has following modules:
 
@@ -25,7 +25,9 @@ I recommend reading the READ.ME section of webrtc-app/webrtc-server to understan
 **Tech Stack Signaling Server:**  NodeJS 16, Socket.io server
 
 
-This is my first every UI application with alomost nill experience in the user interface software technologies. With Significant experience in the server side technologies, it would be tough (conidering the faetures this application has) for me to produce next application like this in the UI segment. **I dedicate this project to my sister Ruqia and her two kids Zayn and Hamza**.
+This is my first every UI application with alomost nill experience in the user interface software technologies. With Significant experience in the server side technologies, it would be tough (considering the features this application has) for me to produce next one like this in the UI segment. 
+
+**I dedicate this project to my sister Ruqia and her two kids Zayn and Hamza**.
 
 
 
