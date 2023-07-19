@@ -24,13 +24,9 @@ I recommend reading the READ.ME section of webrtc-app/webrtc-server to understan
 **Tech Stack Signaling Server:**  NodeJS 16, Socket.io server
 
 
-This is my first every UI application with almost nil experience in the user interface software technologies. With significant experience in the server side technologies, it would be tough (considering the features this application has) for me to produce next one like this in the UI segment. This is one of the best applications I have every developed. Here are few important stakeholders in this project from the logistics point of view:
+This is my first every UI application with almost nil experience in the user interface software technologies. With significant experience in the server side technologies, it would be tough (considering the features this application has) for me to produce next one like this in the UI segment. 
 
-1.	Customer/Manager:  Abdul Rashid Nagoo (my father, this requirement came from him)
-2.	Product owner: Ruqia (my sister)
-3.	Another Manager: Showkat (my brother-in-law)
-4.	UI/UX: Hamza (my nephew, loves to puke on me)
-5.	Developers:  Musaib, Zayn (my brother, my nephew, they love to develop in their own assignments)
+**This is one of the best applications I have every developed.**
 
 
 
