@@ -2,8 +2,7 @@
 
 ![webrtc](https://github.com/irfan-nagoo/webrtc-conferencing/assets/96521607/2917c651-ede7-406c-b758-f48fc7ebcd52)
 
-
-This project started with some hands on using [Google WebRTC samples](https://codelabs.developers.google.com/codelabs/webrtc-web#0) and ended up in a full fledge Realtime communication application with exciting features and UI. This application handles almost all forms of realtime remote communication options. There is no extra installation required to use this application except the web browser. This application supports following features:
+This project started with some hands on using [Google WebRTC samples](https://codelabs.developers.google.com/codelabs/webrtc-web#0) and ended up in a full fledge Realtime communication application with exciting features and UI. This application handles almost all forms of Realtime remote communication options. There is no extra installation required to use this application except the web browser. This application supports following features:
 
     1. Audio/Video conferencing features with multiple participants.
     2. Multiple parallel conferences separated by rooms.
@@ -25,9 +24,14 @@ I recommend reading the READ.ME section of webrtc-app/webrtc-server to understan
 **Tech Stack Signaling Server:**  NodeJS 16, Socket.io server
 
 
-This is my first every UI application with alomost nill experience in the user interface software technologies. With Significant experience in the server side technologies, it would be tough (considering the features this application has) for me to produce next one like this in the UI segment. 
+This is my first every UI application with almost nil experience in the user interface software technologies. With significant experience in the server side technologies, it would be tough (considering the features this application has) for me to produce next one like this in the UI segment.  Here are few important stakeholders in this project:
 
-**I dedicate this project to my sister Ruqia and her two kids Zayn and Hamza**.
+1.	Customer/Manager:  Abdul Rashid Nagoo (my father, this requirement came from him)
+2.	Product owner: Ruqia (my sister)
+3.	Another Manager: Showkat (my brother in law)
+4.	UI/UX: Hamza (my nephew, loves to puke on me)
+5.	Developers:  Musaib, Zayn (my brother, my nephew, they love to develop)
+
 
 
 
