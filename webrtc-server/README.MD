@@ -46,7 +46,7 @@ Here are the steps to generate CA signed certificate:
 
             openssl req -new -nodes -out cert.csr -newkey rsa:4096 -keyout key.pem -subj '/CN=WebRTC App/C=IN/ST=J&K/L=Baramulla/O=WebRTC Inc'
 
-        We can also create CSR as the first step in case we do not want to create a new CA and want to get our certificate signed by other CA or and well know CA's like Commodo, DigiCert etc. which are easily recognized by all major browsers.
+We can also create CSR as the first step in case we do not want to create a new CA and want to get our certificate signed by other CA or and well know CA's like Commodo, DigiCert etc. which are easily recognized by all major browsers.
 
 4. Now, sign the CSR with the CA key and cert created in step 1 and 2:
 
