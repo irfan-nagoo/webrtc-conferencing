@@ -14,4 +14,6 @@ The webrtc-server is the singaling server which actually enables to establish a 
     4. Signaling server is up and running at port 9443
 
 
-## Securing Web/Application servers
+## Securing Web/Application servers (enabling https)
+
+In order to enable SSL/TLS , 
