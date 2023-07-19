@@ -26,8 +26,9 @@ module.exports = {
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
       filename: 'index.html',
-      inject: true,
+      favicon: path.resolve(__dirname, 'assets/images','favicon.png'),
       template: path.resolve(__dirname, 'src', 'index.html'),
+      inject: true
     }),
   ],
   output: {

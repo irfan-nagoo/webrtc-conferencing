@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Real Time Communication with WebRTC</title>
+    <title>Real Time Communication</title>
     <script src="https://webrtc.github.io/adapter/adapter-latest.js"></script>
 </head>
 
@@ -35,7 +35,7 @@
                         </div>
                     </div>
                     <div class="modal-footer" id="modalFooter">
-                        <button id="joinButton" type="submit" class="btn btn-light" data-dismiss="modal">Join</button>
+                        <button id="joinConferenceBtn" type="submit" class="btn btn-light" data-dismiss="modal">Join</button>
                     </div>
                 </form>
             </div>
@@ -67,12 +67,12 @@
                             placeholder="Type message"></textarea>
                         <a class="ms-0" href="#!">
                                 <span class="input-group-text" id="fileUpload">
-                                    <label for="fileInput"><img src="./assets/icons/paperclip.svg" id="fileUploadImg" /></label>
-                                    <input type="file" id="fileInput" multiple />
+                                    <label for="fileInputBtn"><img src="./assets/icons/paperclip.svg" id="fileUploadImg" /></label>
+                                    <input type="file" id="fileInputBtn" multiple />
                                 </span>
                         </a>
                         <a class="ms-0" href="#!">
-                            <span class="input-group-text" id="sendText">
+                            <span class="input-group-text" id="sendTextBtn">
                                 <img src="./assets/icons/send.svg" id="sendTextImg" />
                             </span>
                         </a>
@@ -86,13 +86,13 @@
     <div class="container text-center">
         <div class="row justify-content-md-center">
             <div>
-                <button id="micOnOff" class="btn btn-circle btn-light">
+                <button id="micOnOffBtn" class="btn btn-circle btn-light">
                     <img src="./assets/icons/mic.svg" id="micOnOffImg" /></button>
-                <button id="videoOnOff" class="btn btn-circle btn-light">
+                <button id="videoOnOffBtn" class="btn btn-circle btn-light">
                     <img src="./assets/icons/camera-video.svg" id="videoOnOffImg" /></button>
-                <button id="screenShare" class="btn btn-circle btn-light">
+                <button id="screenShareBtn" class="btn btn-circle btn-light">
                     <img src="./assets/icons/display.svg" id="screenShareImg" /></button>
-                <button id="hangup" class="btn btn-circle btn-light">
+                <button id="hangupBtn" class="btn btn-circle btn-light">
                     <img src="./assets/icons/telephone-x.svg" id="hangupImg" /></button>
             </div>
         </div>
